@@ -45,7 +45,6 @@ const App = () => {
 							/>
 						</Route>
 					</Route>
-					<Route path="*" element={<Navigate to="/" />} />
 				</Routes>
 			</BrowserRouter>
 		</div>

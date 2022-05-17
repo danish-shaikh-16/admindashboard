@@ -1,0 +1,78 @@
+.navbar {
+	position: sticky;
+	top: 0;
+	right: 0;
+
+	z-index: 99999;
+	background-color: #fff;
+	-webkit-box-shadow: 6px 2px 5px 0px rgba(0, 0, 0, 0.47);
+	box-shadow: 6px 2px 5px 0px rgba(201, 201, 201, 0.47);
+
+	height: 50px;
+	border-bottom: 0.5px solid rgb(231, 228, 228);
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	color: #555;
+
+	.wrapper {
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		.search {
+			display: flex;
+			align-items: center;
+			border: 0.5px solid lightgray;
+			padding: 3px;
+			cursor: pointer;
+
+			.searchIcon {
+				cursor: pointer;
+			}
+
+			input {
+				border: none;
+				outline: none;
+				background-color: transparent;
+
+				&::placeholder {
+					font-size: 12px;
+				}
+			}
+		}
+
+		.items {
+			display: flex;
+			align-items: center;
+
+			.item {
+				display: flex;
+				align-items: center;
+				margin-right: 20px;
+				cursor: pointer;
+
+				.icon {
+					font-size: 20px;
+				}
+
+				.css-fvc8ir-MuiBadge-badge {
+					min-width: 15px;
+					height: 15px;
+					font-size: 0.6rem;
+					border-radius: 50%;
+					background-color: red !important;
+					color: white;
+				}
+
+				.avatar {
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
